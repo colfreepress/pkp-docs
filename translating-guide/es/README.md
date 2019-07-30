@@ -1,9 +1,9 @@
 
 # PKP Translating Guide
 
-PKP software includes popular applications like Open Journal Systems, Open Monograph Press, and Open Conference Systems. These applications can use multiple languages for interfaces, emails to users, etc. Open Journal Systems in particular has been translated to many languages. Some of these translations are not complete, and the applications get updated constantly.
+El software PKP incluye aplicaciones populares como el OJS (Open Journal Systems), OMP (Open Monograph Press) y el OCS (Open Conference Systems). Estas aplicaciones pueden pueden usarse en   multiples lenguajes para la interfaz, correos elctrónicos hacia los usuarios, etc. En particular, OJS ha sido traducido en muchos idiomas. Algunas de esas traducciones no están completas, y las aplicaciones deben ser actualizadas constantemente.
 
-Community translators are helping with the important task of localizing software and documentation. They come from many different backgrounds; this documentation is supposed to help old and new contributors to explain how the translation processes work and how they can contribute. In addition, the documentation points to additional ressources.
+La comunidad de traductores está ayudando con la importante tarea de identificar el software y la documentación. Los traductores provienen de diferentes experticias; esta documentación se supone de ayuda a antiguos y nuevos colaboradores para explicar como funciona el proceso de traducción y cómo es posible realizar una contribución.  
 
 ----
 Copyright: Simon Fraser University holds the copyright for work produced by the Public Knowledge Project and has placed its documentation under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
