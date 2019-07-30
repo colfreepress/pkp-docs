@@ -1,11 +1,11 @@
-Introduction
+Introducción
 ============
 
-OJS and OCS are multilingual systems, allowing journals and conferences to publish in a variety of languages. The Public Knowledge Project aims to support English, French, Spanish and Portuguese translations for both OJS and OCS. In addition, translations of both software packages have been completed by the community, and we welcome contributions at any time.
+OJS y OCS son sistemas multilenguaje, permitiendo a las revistas y conferencias publicar en una variedad de idiomas. El objetivo del Public Knowledge Project es proveer traducciones en inglés, Francés, Español y Portugués tanto para el OJS como para el OCS. Adicionalmente, las traducciones para ambos sistemas han sido realizados por la comunidad, y están bienvenidas las contribuciones todo el tiempo.
 
-All text you see in a typical fresh OxS interface has been abstracted from the system code, and has in fact been retrieved from one of a number of XML locale files. These files can be found in folders using appropriate ISO locale codes (the [Language Code Listing](http://www.loc.gov/standards/iso639-2/php/code_list.php) followed by the [Country Code Listing](http://www.iso.org/iso/country_codes/iso_3166_code_lists/english_country_names_and_code_elements.htm)), for example `en_US` for American English, or `pt_BR` for Brazilian Portuguese. This document will use `en_US` for its examples.
+Todo el texto que vemos en una típica OxS interfaz ha sido obtenida desde el sistema de código, y ha sido, de hecho, recuperado desde uno o varios  archivos locales de XML. Estos archivos pueden ser encontrados en las carpetas usando un apropiado código ISO (El identificador de código de idioma seguido por el identificador del país), por ejemplo en_US para inglés americano, o pt_BR para portugues brasilero. Este documento usará  en_US para los ejemplos.
 
-These locale directories will typically have XML files containing lists of message keys written in them: these message keys and their corresponding values correspond to template lines in the system code itself. The following set of message keys are taken from `locale/en_US/locale.xml`:
+Estos directorios locales usualmente tienen archivos en XML que contienen listas de claves de mensajes escritos en ellos. Estas claves y sus correspondientes valores, corresponden a plantilas en un sistema de código propio. El siguiente mensaje está tomado de locale/en_US/locale.xml:
 
 ```
 <message key="navigation.journalHelp">Journal Help</message>
@@ -16,48 +16,24 @@ These locale directories will typically have XML files containing lists of messa
 <message key="navigation.register">Register</message>
 ```
 
-When the system needs to display a piece of text, it first determines
-which language should be displayed. The first place it checks is to see
-which language has been set as the site-wide default by the Site
-Administrator. If the user is currently looking at a journal, the system
-instead checks to see which language the Journal Manager has set as the
-default. And finally, if multiple languages have been installed it
-checks to see if the user has specified another language to be used
-instead of the default. More information on administering languages can
-be found in the section on checking language availability.
+Cuando el sistema necesita mostrar una pieza de texto, este primero determina el idioma en el que debe mostrarlo. En primer lugar, se verifica qué idioma ha sido configurado por defecto en todo el sistema por el administrador del sitio. Si los usuarios estan constantemente viendo la revista, el sistema en cambio verifica el idioma que el administrador de la Revista ha dejado cómo predeterminado. Finalmente, si se tienen instalados multiples idiomas, el sistema verifica si los usuarios han especificado otros lenguajes para ser utilizados en vez del predeterminado. Más información sobre la administración de idiomas pueden ser encontrada en la sección sobre verificacion de disponibilidad de idiomas.
 
-Once the system knows which language to display to the user it grabs the
-message key value from the locale file that belongs to that specific
-translation: that is, if it needs to display the text relevant to
-`message key="navigation.journalHelp"` from the above example, and knows
-that it should display this in English, it will look in
-`locale/en_US/locale.xml` for the appropriate key value, in this case
-"Journal Help". If the message key doesn't exist (if the locale file is
-missing that particular key, or doesn't exist on the system in the first
-place), the system will display the raw message key surrounded by hash
-marks: `##navigation.journalHelp##`
+Una vez el sistema conoce el idioma que está viendo el usuario, este graba un valor en el "message key" en el archivo local que pertenece a una traducción específica: que es, si necesita mostrar el texo relevante  key="navigation.journalHelp" proveniente del ejemplo de arriba, y sabemos que debe mostrar el texto en inglés, este se verá en locale/en_US/locale.xml para el valor apropiado de la clave, en este caso "Journal Help". Si el mensaje clave no existe (si el archivo local está perdido, o no existe sobre el sistema en el primer lugar), el sistema mostrará el mensaje clave rodeado por los símbolos de numeral: ##navigation.journalHelp##
 
-If you ever see that kind of code on an OJS or OCS page, you know that
-the translation is incomplete. You can take a look at the section on
-translating to see how to complete it.
+Si alguna vez ve este tipo de código en la página de OJS o OCS, debe saber que la traducción está incompleta. Tu puedes ver la sección sobre traducción para saber como se completa.
 
-Checking Language Availability
+Revisando la disponibilidad de idiomas
 ==============================
 
-You are advised to first check which languages are available from your
-version of OCS or OJS. If the language you want isn't listed, then check
-our website for availability.
+Se aconseja que primero se verifique cuáles idiomas están disponibles para la versión de OJS o OCS que utliza. Si el lenguaje no está en la lista, entonces verifique la disponibilidad en el sitio web.
 
-Checking Your Software for Available Languages
+Verificando el software para disponibildad de idiomas
 ----------------------------------------------
 
-The first place to check on language availability is from within the
-software installation itself.
+En primer lugar, para la  verificación de la disponibilidad de idiomas se debe hacer desde la instalación del software.
+Para ambos, OJS y OCS: Si tiene un acceso como administrador al sistema, ingrese y diríjase a la pantalla principal, y de click al link de idiomas, que lo llevará a la página de administración de idiomas. 
 
-For both OJS and OCS: If you have System Administrator access, log in
-and go to the System Administrator User Home, and click the
-<em>Languages</em> link, which will take you to the site-wide languages
-administration page. This page has two main sections:
+Esta página tiene dos secciones principalmente:
 
 -   Under <em>Language Settings</em> you will find a drop-down box for
     your Primary Locale: this sets the default language across the
