@@ -1,5 +1,5 @@
 
-# PKP Translating Guide
+# PKP Guía de traducción
 
 El software PKP incluye aplicaciones populares como el OJS (Open Journal Systems), OMP (Open Monograph Press) y el OCS (Open Conference Systems). Estas aplicaciones pueden pueden usarse en   multiples lenguajes para la interfaz, correos elctrónicos hacia los usuarios, etc. En particular, OJS ha sido traducido en muchos idiomas. Algunas de esas traducciones no están completas, y las aplicaciones deben ser actualizadas constantemente.
 
