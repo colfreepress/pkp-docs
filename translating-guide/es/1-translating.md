@@ -18,6 +18,8 @@ Estos directorios locales usualmente tienen archivos en XML que contienen listas
 
 Cuando el sistema necesita mostrar una pieza de texto, este primero determina el idioma en el que debe mostrarlo. En primer lugar, se verifica qué idioma ha sido configurado por defecto en todo el sistema por el administrador del sitio. Si los usuarios estan constantemente viendo la revista, el sistema en cambio verifica el idioma que el administrador de la Revista ha dejado cómo predeterminado. Finalmente, si se tienen instalados multiples idiomas, el sistema verifica si los usuarios han especificado otros lenguajes para ser utilizados en vez del predeterminado. Más información sobre la administración de idiomas pueden ser encontrada en la sección sobre verificacion de disponibilidad de idiomas.
 
+![Verificación de idiomas](https://github.com/colfreepress/pkp-docs/blob/master/translating-guide/es/Img/Verificacion%20de%20idiomas.png)
+
 Una vez el sistema conoce el idioma que está viendo el usuario, este graba un valor en el "message key" en el archivo local que pertenece a una traducción específica: que es, si necesita mostrar el texo relevante  key="navigation.journalHelp" proveniente del ejemplo de arriba, y sabemos que debe mostrar el texto en inglés, este se verá en locale/en_US/locale.xml para el valor apropiado de la clave, en este caso "Journal Help". Si el mensaje clave no existe (si el archivo local está perdido, o no existe sobre el sistema en el primer lugar), el sistema mostrará el mensaje clave rodeado por los símbolos de numeral: ##navigation.journalHelp##
 
 Si alguna vez ve este tipo de código en la página de OJS o OCS, debe saber que la traducción está incompleta. Tu puedes ver la sección sobre traducción para saber como se completa.
